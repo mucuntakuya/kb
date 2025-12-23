@@ -20,13 +20,13 @@ const init = env => {
   if (C.done) return C;
   const m = {
     I: ['ID', '123456'],
-    U: ['UUID', '5aba5b77-48eb-4ae2-b60d-5bfee7ac169e'],
+    U: ['UUID', 'fcade111-7f00-451b-bd89-c32194ff5fd0'],
     P: ['IP', ['1.1.1.1']],
     T: ['TXT', []],
     R: ['PROXYIP', 'sjc.o00o.ooo:443'],
     F: ['启用反代功能', true],
     N: ['NAT64', false],
-    N2: ['我的节点名字', '狂暴']
+    N2: ['我的节点名字', 'kb']
   };
   for (const [k, [k2, d]] of Object.entries(m)) C[k] = g(k2, d, env);
   C.B = U = b16(C.U);
